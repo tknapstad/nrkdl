@@ -122,6 +122,7 @@ def _download_all(items):
        Example: [(url, quality, file_path)]
 
     """
+    global WORKERS
     fut = {}
     # limit workers to max number of items
     if len(items) > WORKERS:
